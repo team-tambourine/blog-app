@@ -10,7 +10,8 @@
     margin-bottom: 20px;
 }
 
-.listItemContainer {
+.flexBox {
+    display: flex;
     margin: 20px 0;
 }
 .itemImage {
@@ -21,7 +22,7 @@
     /* margin: 0 auto; */
 }
 .informationContainer {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .listItemTitle {
     margin: 0;
@@ -29,9 +30,6 @@
 .userName {
     margin: 5px 0 0 0;
     font-size: 5px;
-}
-.listItemContainer {
-    display: flex;
 }
 .listItemBorder {
     border-top: 3px solid rgb(220, 220, 220);

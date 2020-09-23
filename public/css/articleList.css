@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 /* ページ上部 */
 .container {
     width: 75%;
@@ -16,6 +19,9 @@
 .listItemFlexBox {
     display: flex;
     margin: 20px 0;
+}
+.listItemFlexBox:hover {
+    cursor: pointer;
 }
 .listItemImage {
     display: block;
@@ -47,6 +53,9 @@
 }
 /* ページ切り替えボタン */
 .pageSwitchContainer {
+    position: fixed;
+    bottom: 0;
+    width: 75%;
     height: 30px;
     margin: 20px 0 40px 0;
     display: flex;
@@ -59,6 +68,9 @@
     border: 0.1px solid #999999;
     border-radius: 50%;
 }
+.pageSwitchButton:hover {
+    cursor: pointer;
+}
 .pageNumber {
     margin: auto 10px;
 }
@@ -67,4 +79,19 @@
 }
 .buttonRight {
     margin-right: auto;
+}
+
+/* スマホ用メディアクエリ */
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 10px;
+        width: 95%;
+    }
+    .pageTitle {
+        margin-bottom: 10px;
+    }
+    .pageSwitchContainer {
+        width: 95%;
+        margin: 20px 0;
+    }
 }

@@ -16,13 +16,17 @@ Route::get('/', function () {
     // return view('auth.login');
 });
 
-Route::get('/list', 'BoardController@index');
-
-Route::get('/add', 'BoardController@add');
-Route::post('/add', 'BoardController@create');
-
-Route::get('/show', 'BoardController@show');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/list', 'BoardController@index');
+
+    Route::get('/add', 'BoardController@add');
+    Route::post('/add', 'BoardController@create');
+
+    Route::get('/show', 'BoardController@show');
+
+});

@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +16,6 @@ Route::get('/', function () {
     // return view('welcome');
 });
 
-Route::get('/list', 'BoardController@index');
+Auth::routes();
 
-Route::get('/add', 'BoardController@add');
-Route::post('/add', 'BoardController@create');
-
-Route::get('/show', 'BoardController@show');
+Route::get('/home', 'HomeController@index')->name('home');

@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('header');
+    return view('auth.signUp');
+    // return view('auth.login');
 });
 
 Route::get('/list', 'BoardController@index');

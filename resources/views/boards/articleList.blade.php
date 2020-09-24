@@ -13,14 +13,16 @@
 
             <!-- 以下、foreachで回す記事リストアイテムの雛形 -->
             <div class="listItemContainer">
-                <main class="listItemFlexBox">
-                    <img class="listItemImage" src="" />
-                    <div class="informationContainer">
-                        <h4 class="listItemTitle">title</h4>
-                        <p class="userName">userName</p>
-                    </div>
-                </main>
-                <div class="listItemBorder"></div>
+                @foreach ($articles as $article)
+                    <main class="listItemFlexBox">
+                        <img class="listItemImage" src="" />
+                        <div class="informationContainer">
+                            <h4 class="listItemTitle">{{ $article->title }}</h4>
+                            <p class="userName">{{ $article->user->name }}</p>
+                        </div>
+                    </main>
+                    <div class="listItemBorder"></div>
+                @endforeach
             </div>
 
             <div class="pageSwitchContainer">

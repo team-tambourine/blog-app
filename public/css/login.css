@@ -1,0 +1,35 @@
+.loginContent{
+  width: 520px;
+}
+
+.loginTitle{
+  padding: 60px 0 0 40px;
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W5);
+  font-size: 30px; 
+  color: #2680BF;
+}
+.loginSubTitle{
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W5);
+  font-size: 14px;
+
+}
+.loginLabel{
+  font-weight: bold;
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W5);
+  font-size: 14px;
+  padding-bottom: 10px;
+
+}
+
+.warning{
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W5);
+  font-size: 14px;
+  padding-bottom: 40px;
+  color: #999999;
+}

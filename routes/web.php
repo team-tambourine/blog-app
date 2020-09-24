@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('header');
 });
 
+Route::get('/list', 'BoardController@index');
+
+Route::get('/add', 'BoardController@add');
+Route::post('/add', 'BoardController@create');
+
+Route::get('/show', 'BoardController@show');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

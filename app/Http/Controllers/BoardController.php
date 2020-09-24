@@ -11,7 +11,7 @@ class BoardController extends Controller
     public function index(Request $request)
     {
         $articles = Board::all();
-        return view('boards.index');
+        return view('boards.articleList', ['articles' => $articles]);
     }
 
     public function add()

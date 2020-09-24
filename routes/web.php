@@ -17,3 +17,10 @@ Route::get('/', function () {
     return view('articleList');
     // return view('welcome');
 });
+
+Route::get('/list', 'BoardController@index');
+
+Route::get('/add', 'BoardController@add');
+Route::post('/add', 'BoardController@create');
+
+Route::get('/show', 'BoardController@show');

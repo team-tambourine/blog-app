@@ -9,14 +9,13 @@
 
 <body>
   <div class="header">
-    <div class="container">
-      <h1>triton</h1>
-      <div>
-        <ul>
-          <li><a href="#" class="headerBtn signupBtn">会員登録</a></li>
-          <li><a href="#" class="headerBtn signinBtn">ログイン</a></li>
-        </ul>
-      </div>
+    <div class="headerContainer">
+      <h1 class="headerLogo">triton</h1>
+      <ul class="headerBtns">
+        <!-- ページごとで以下のボタンを変更 -->
+        <li><a href="#" class="headerBtn signupBtn">会員登録</a></li>
+        <li><a href="#" class="headerBtn signinBtn">ログイン</a></li>
+      </ul>
     </div>
   </div>
 </body>

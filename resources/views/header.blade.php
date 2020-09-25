@@ -17,10 +17,12 @@
       <ul class="headerBtns">
         <!-- ページごとで以下のボタンを変更 -->
         @if (Auth::check())
-        <li><a href="{{ route('add') }}" class="headerBtn signupBtn">新規投稿</a></li>
+        <li><a href="{{ route('add') }}" class="headerBtn headerPostBtn">新規投稿</a></li><div class="headerIcon">
+          <img src="#" alt="">
+        </div>
         @else
-        <li><a href="{{ route('register') }}" class="headerBtn signupBtn">会員登録</a></li>
-        <li><a href="{{ route('login') }}" class="headerBtn signinBtn">ログイン</a></li>
+        <li><a href="{{ route('register') }}" class="headerBtn headerSignupBtn">会員登録</a></li>
+        <li><a href="{{ route('login') }}" class="headerSigninBtn">ログイン</a></li>
         @endif
       </ul>
     </div>

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/css/CreateNewArticle.css" />
     </head>
     <body>
+        @include('header')
         <div class="container">
             <h2 class="pageTitle">記事タイトル</h2>
             <!-- <div class="border"></div> -->

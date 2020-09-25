@@ -16,8 +16,12 @@
       </h1>
       <ul class="headerBtns">
         <!-- ページごとで以下のボタンを変更 -->
-        <li><a href="/signUp" class="headerBtn signupBtn">会員登録</a></li>
-        <li><a href="/login" class="headerBtn signinBtn">ログイン</a></li>
+        @if (Auth::check())
+        <li><a href="{{ route('add') }}" class="headerBtn signupBtn">新規投稿</a></li>
+        @else
+        <li><a href="{{ route('register') }}" class="headerBtn signupBtn">会員登録</a></li>
+        <li><a href="{{ route('login') }}" class="headerBtn signinBtn">ログイン</a></li>
+        @endif
       </ul>
     </div>
   </div>

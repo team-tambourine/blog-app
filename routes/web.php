@@ -13,16 +13,9 @@
 
 
 
-Route::get('/', function () {
-    return view('boards.articleList');
-    // return view('createNewArticle');
-    // return view('auth.login_chenged');
-});
-
-
 Auth::routes();
 
-// Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index');
 
 Route::group(['middleware' => ['auth']], function () {
 

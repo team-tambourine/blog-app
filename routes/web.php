@@ -11,18 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('auth.signUp');
-    // return view('auth.login');
-});
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 
 Route::group(['middleware' => ['auth']], function () {
 
-    Route::get('/list', 'BoardController@index');
+    Route::get('/list', 'BoardController@index')->name('list');
 
     Route::get('/add', 'BoardController@add');
     Route::post('/add', 'BoardController@create');

@@ -16,14 +16,18 @@ class BoardController extends Controller
 
     public function add()
     {
-        return view('boards.create');
+
+        return view('boards.CreateNewArticle');
     }
 
     public function create(Request $request)
     {
         /*バリデーションする? ....*/
         $board = new Board;
+        $user = \Auth::user();
+        $user_id = $user->id;
         $article = $request->all();
+        $article += ["user_id" => $user_id];
         unset($article['_token']);
         $board->fill($article)->save();
 

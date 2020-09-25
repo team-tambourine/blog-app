@@ -13,10 +13,16 @@
 
 
 
+Route::get('/', function () {
+    return view('boards.articleList');
+    // return view('createNewArticle');
+    // return view('auth.login_chenged');
+});
+
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
+// Route::get('/', 'HomeController@index');
 
 Route::group(['middleware' => ['auth']], function () {
 
@@ -26,5 +32,4 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/add', 'BoardController@create');
 
     Route::get('/show/{id}', 'BoardController@show');
-
 });

@@ -10,11 +10,13 @@
 <body>
   <div class="header">
     <div class="headerContainer">
-      <h1 class="headerLogo">triton</h1>
+      <h1 class="headerLogo">
+        <a href='/list'>triton</a>
+      </h1>
       <ul class="headerBtns">
         <!-- ページごとで以下のボタンを変更 -->
-        <li><a href="#" class="headerBtn signupBtn">会員登録</a></li>
-        <li><a href="#" class="headerBtn signinBtn">ログイン</a></li>
+        <li><a href="/signUp" class="headerBtn signupBtn">会員登録</a></li>
+        <li><a href="/login" class="headerBtn signinBtn">ログイン</a></li>
       </ul>
     </div>
   </div>

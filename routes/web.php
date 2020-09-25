@@ -25,5 +25,4 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/add', 'BoardController@create');
 
     Route::get('/show', 'BoardController@show');
-
 });

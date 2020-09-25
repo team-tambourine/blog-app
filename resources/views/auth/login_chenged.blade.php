@@ -9,7 +9,7 @@
     </head>
 
     <body>
-
+        @include('header')
         <div class="container">
           <div class="loginContent">
             <div class="text-center">

@@ -7,13 +7,13 @@
         <title>List</title>
     </head>
     <body>
+        @include('header')
         <div class="container">
             <h2 class="pageTitle">記事一覧</h2>
             <div class="border"></div>
 
-            <!-- 以下、foreachで回す記事リストアイテムの雛形 -->
-            <div class="listItemContainer">
-                @foreach ($articles as $article)
+            @foreach ($articles as $article)
+                <div class="listItemContainer">
                     <main class="listItemFlexBox">
                         <img class="listItemImage" src="" />
                         <div class="informationContainer">
@@ -22,8 +22,9 @@
                         </div>
                     </main>
                     <div class="listItemBorder"></div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
+            {{-- ↑  foreachで回す部分を少し変えました --}}
 
             <div class="pageSwitchContainer">
                 <button class="pageSwitchButton buttonLeft"><</button>

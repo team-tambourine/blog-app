@@ -30,10 +30,10 @@ class BoardController extends Controller
         return redirect('/list');
     }
 
-    public function show()
+    public function show($id)
     {
-        $article = Board::find($request->id);
+        $article = Board::find($id);
 
-        return view('boards.show', ['article' => $article]);
+        return view('boards.articleDetail', ['article' => $article]);
     }
 }

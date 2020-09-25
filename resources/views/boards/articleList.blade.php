@@ -16,9 +16,12 @@
                 <div class="listItemContainer">
                     <main class="listItemFlexBox">
                         <img class="listItemImage" src="" />
+
                         <div class="informationContainer">
-                            <h4 class="listItemTitle">{{ $article->title }}</h4>
-                            <p class="userName">{{ $article->user->name }}</p>
+                            <a href="/show/{{ $article->id }}">
+                                <h4 class="listItemTitle">{{ $article->title }}</h4>
+                                <p class="userName">{{ $article->user->name }}</p>
+                            </a>
                         </div>
                     </main>
                     <div class="listItemBorder"></div>

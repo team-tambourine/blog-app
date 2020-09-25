@@ -24,5 +24,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/add', 'BoardController@add');
     Route::post('/add', 'BoardController@create');
 
-    Route::get('/show', 'BoardController@show');
+    Route::get('/show/{id}', 'BoardController@show');
+
 });

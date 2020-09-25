@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/css/articleDetail.css" />
     </head>
     <body>
+        @include('header')
         <div class="container">
             <div class="userNameContainer">
                 <img class="listItemImage" src="" />

@@ -31,9 +31,17 @@
             {{-- ↑  foreachで回す部分を少し変えました --}}
 
             <div class="pageSwitchContainer">
-                <button class="pageSwitchButton buttonLeft"><</button>
+                <a href='' class="buttonLeft">
+                    <button class="pageSwitchButton ">
+                        <p><</p>
+                    </button>
+                </a>
                 <p class="pageNumber">1/121</p>
-                <button class="pageSwitchButton buttonRight">></button>
+                <a href='' class="buttonRight">
+                    <button class="pageSwitchButton ">
+                        <p>></p>
+                    </button>
+                </a>
             </div>
         </div>
     </body>

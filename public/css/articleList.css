@@ -7,10 +7,16 @@
 a {
     color: inherit;
 }
+body {
+    min-height: 100vh;
+    position: relative;
+}
 /* ページ上部 */
 .container {
     width: 75%;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 90px;
 }
 .pageTitle {
     margin-bottom: 20px;
@@ -59,7 +65,7 @@ a {
 }
 /* ページ切り替えボタン */
 .pageSwitchContainer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 75%;
     height: 30px;
@@ -70,9 +76,14 @@ a {
     font-size: 3px;
     height: 30px;
     width: 30px;
+    display: inline-block;
     background-color: #fff;
     border: 0.1px solid #999999;
     border-radius: 50%;
+}
+.pageSwitchButton > p {
+    /* text-align: center; */
+    margin: auto;
 }
 .pageSwitchButton:hover {
     cursor: pointer;
@@ -92,12 +103,19 @@ a {
     .container {
         margin-top: 10px;
         width: 95%;
+        padding-bottom: 70px;
     }
     .pageTitle {
         margin-bottom: 10px;
     }
+    .userName {
+        font-size: 12px;
+    }
     .pageSwitchContainer {
         width: 95%;
         margin: 20px 0;
+    }
+    .pageSwitchButton > p {
+        font-size: 12px;
     }
 }

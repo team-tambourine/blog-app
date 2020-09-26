@@ -73,6 +73,8 @@ body {
 
 .loginLink {
     color: #2680bf;
+    /* 武井が追加しました */
+    display: inline-block;
 }
 .loginLink:hover {
     cursor: pointer;

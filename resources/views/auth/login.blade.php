@@ -27,7 +27,7 @@
                       <input class="form-control"  autocomplete="email" type="email" name="email" value="{{ old('email') }}" required>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group pb-5">
                       <p class="loginLabel">パスワード</p>
                       <input class="form-control" autocomplete="off" type="password" name="password" required>
                       <p class="passwordDescription description">8文字以上 小文字大文字数字が入っているようにしてください。</p>

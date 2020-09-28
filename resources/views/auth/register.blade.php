@@ -38,6 +38,11 @@
                       <input class="form-control" autocomplete="off" type="password" name="password" required>
                       <p class="passwordDescription description">8文字以上 小文字大文字数字が入っているようにしてください。</p>
                     </div>
+
+                    <div class="form-group pb-5">
+                      <p class="loginLabel">パスワード(確認)</p>
+                      <input class="form-control" autocomplete="off" type="password" name="password_confirmation" required>
+                    </div>
                     
 
                     <div class="actions">

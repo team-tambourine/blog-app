@@ -61,7 +61,6 @@ body {
 
 .passwordDescription {
     src: local(HiraginoSans-W5);
-    padding-bottom: 40px;
 }
 
 .description {
@@ -69,6 +68,9 @@ body {
     font-family: "Hiragino Sans";
     font-size: 14px;
     color: #999999;
+}
+.confirmPassword {
+    padding-bottom: 60px;
 }
 
 .loginLink {

@@ -16,7 +16,7 @@
             @foreach ($articles as $article)
                 <div class="listItemContainer">
                     <main class="listItemFlexBox">
-                        <img class="listItemImage" src="" />
+                        <a href='user/{{ $article->user->id }}'><img class="listItemImage" src="" /></a>
 
                         <div class="informationContainer">
                             <a href="/show/{{ $article->id }}">

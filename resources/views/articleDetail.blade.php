@@ -22,7 +22,7 @@
                     text text text text text text text text text text text text
                     text text text text text text text text text text text text
                     text text text text text text text text text text text text
-                    text
+                
                 </div>
             </main>
             <div class="border"></div>

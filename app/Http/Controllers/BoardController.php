@@ -10,8 +10,12 @@ class BoardController extends Controller
     //記事一覧
     public function index(Request $request)
     {
-        $articles = Board::all();
+        $articles = Board::where('id','>=',1)->paginate(1);
+        
+        
         return view('boards.articleList', ['articles' => $articles]);
+        
+        
     }
 
     public function add()

@@ -36,7 +36,7 @@
                         <p><</p>
                     </button>
                 </a>
-                <p class="pageNumber">1/121</p>
+                {{$articles->links()}}
                 <a href='' class="buttonRight">
                     <button class="pageSwitchButton ">
                         <p>></p>

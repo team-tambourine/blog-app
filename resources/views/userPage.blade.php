@@ -18,8 +18,8 @@
       <img src="#" alt="ユーザーの画像">
     </div>
     <div class="userInfo">
-      <p class="userName">アカウント名</p>
-      <p class="userEmail">xxx@ooo</p>
+      <p class="userName">{{ $user->name }}</p>
+      <p class="userEmail">{{ $user->email }}</p>
     </div>
   </div>
 </body>

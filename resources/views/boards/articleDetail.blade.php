@@ -11,7 +11,7 @@
         @include('header')
         <div class="container">
             <div class="userNameContainer">
-                <img class="listItemImage" src="" />
+                <a href='user/{{ $article->user->id }}'><img class="listItemImage" src="" /></a>
                 <div class="userName">{{ $article->user->name }}</div>
                 <div class="updatedTime">{{ $article->updated_at }}に更新</div>
             </div>
@@ -23,7 +23,7 @@
             </main>
             <div class="border"></div>
             <div class="userNameContainer">
-                <img class="listItemImage" src="" />
+                <a href='user/{{ $article->user->id }}'><img class="listItemImage" src="" /></a>
                 <p class="userName">{{ $article->user->name }}</p>
                 <p class="updatedTime">{{ $article->updated_at }}に更新</p>
             </div>

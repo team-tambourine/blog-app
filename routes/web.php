@@ -25,4 +25,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/add', 'BoardController@create');
 
     Route::get('/show/{id}', 'BoardController@show');
+
+    Route::get('/user/mypage', 'UserController@home')->name('mypage');
+    Route::get('/user/{user}', 'UserController@show');
 });

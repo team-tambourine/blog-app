@@ -18,7 +18,7 @@
         <!-- ページごとで以下のボタンを変更 -->
         @if (Auth::check())
         <li><a href="{{ route('add') }}" class="headerBtn headerPostBtn">新規投稿</a></li><div class="headerIcon">
-          <img src="#" alt="">
+          <a href='{{ route('mypage') }}'><img src="#" alt=""></a>
         </div>
         @else
         <li><a href="{{ route('register') }}" class="headerBtn headerSignupBtn">会員登録</a></li>

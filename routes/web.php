@@ -28,4 +28,6 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/user/mypage', 'UserController@home')->name('mypage');
     Route::get('/user/{user}', 'UserController@show');
+    
+    Route::post('/delete/{id}', 'BoardController@delete')->name('delete');
 });

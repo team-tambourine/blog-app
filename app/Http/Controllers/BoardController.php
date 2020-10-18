@@ -10,7 +10,8 @@ class BoardController extends Controller
     //記事一覧
     public function index(Request $request)
     {
-        $articles = Board::where('id','>=',1)->paginate(1);
+        $articles = Board::paginate(2);
+        
         
         
         return view('boards.articleList', ['articles' => $articles]);
@@ -44,4 +45,21 @@ class BoardController extends Controller
 
         return view('boards.articleDetail', ['article' => $article]);
     }
+    
+    public function destroy($id)
+    {
+        
+        $article = Board::findOrFail($id);
+        
+        
+        if (\Auth::id() === $article->user_id) {
+            $article->delete();
+            
+        }
+
+        
+        return back();
+    }
+    
+    
 }

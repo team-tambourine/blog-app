@@ -17,4 +17,5 @@ class UserController extends Controller
         $user = User::find($user_id);
         return view('userPage', ['user' => $user]);
     }
+    
 }

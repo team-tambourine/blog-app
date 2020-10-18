@@ -29,14 +29,17 @@
                 </div>
             @endforeach
             {{-- ↑  foreachで回す部分を少し変えました --}}
-
+            
+            
             <div class="pageSwitchContainer">
                 <a href='' class="buttonLeft">
                     <button class="pageSwitchButton ">
                         <p><</p>
                     </button>
                 </a>
-                {{$articles->links()}}
+                <div class="pagenation">
+                    {{$articles->links()}}
+                </div>
                 <a href='' class="buttonRight">
                     <button class="pageSwitchButton ">
                         <p>></p>

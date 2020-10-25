@@ -17,7 +17,12 @@
       <ul class="headerBtns">
         <!-- ページごとで以下のボタンを変更 -->
         @if (Auth::check())
-        <li><a href="{{ route('add') }}" class="headerBtn headerPostBtn">新規投稿</a></li><div class="headerIcon">
+        <li><a href="{{ route('add') }}" class="headerBtn headerPostBtn">新規投稿</a></li>
+        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> ログアウト </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+          </form>
+        <div class="headerIcon">
           <a href='{{ route('mypage') }}'><img src="#" alt=""></a>
         </div>
         @else

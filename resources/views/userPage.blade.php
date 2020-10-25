@@ -21,6 +21,7 @@
       <p class="userName">{{ $user->name  }}</p>
       <p class="userEmail">{{ $user->email }}</p>
     </div>
+    
   </div>
 </body>
 

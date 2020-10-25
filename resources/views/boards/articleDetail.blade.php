@@ -20,11 +20,13 @@
                 <div class="textBody">
                     {{ $article->message }}
                 </div>
-                <div>
-                    @if (Auth::id() == $article->user_id)
-                        <a href="{{ route('delete',$article->id) }}" style="color: blue;">削除</a>
-                    @endif
-                </div>
+                
+                <a href="{{ route('delete',$article->id) }}" onclick="event.preventDefault(); document.getElementById('delete-form').submit();"> 削除 </a>
+                  <form id="delete-form" action="{{ route('delete',$article->id) }}" method="POST" style="display: none;">
+                    @csrf
+                  </form>
+                
+                
             </main>
             <div class="border"></div>
             <div class="userNameContainer">

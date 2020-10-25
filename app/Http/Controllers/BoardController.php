@@ -46,20 +46,20 @@ class BoardController extends Controller
         return view('boards.articleDetail', ['article' => $article]);
     }
     
-    public function destroy($id)
+    
+    
+    public function delete($id)
     {
-        
         $article = Board::findOrFail($id);
-        
         
         if (\Auth::id() === $article->user_id) {
             $article->delete();
-            
         }
-
         
-        return back();
+        
+        return redirect('list');
     }
+        
     
     
 }
